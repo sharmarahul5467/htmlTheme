@@ -1,0 +1,48 @@
+// select color for bootstrap 4 theming 
+$primary-color 		    : #f00;
+$secondary-color	    : #000;
+$success-color          : #28a745 ;
+$info-color             : #17a2b8 ;
+$warning-color          : #ffc107 ;
+$danger-color           : #dc3545 ;
+$light-color            : #f8f9fa ;
+$dark-color             : #343a40 ;
+
+// hover color
+$primary-color-hover 	: #243a7e;
+$secondary-color-hover	: #dd802e;
+
+$headingColor		    : #333333;
+$light_color 		    : #ebf3f8;
+
+$activated_color        : #378033;
+$activated_color-light  : #eeffef;
+// Fonts
+$font-proximanova       : "proximanova";
+$roboto                 : "Roboto";
+$raleway                 : "raleway";
+
+
+$pn_light  			: 'proxima_novalight';
+$pn_normal 			: 'proxima_novaregular';
+$pn_semi  			: 'Conv_ProximaNova-Semibold';
+$pn_bold  			: 'proxima_nova_rgbold';
+$pn_ebold  			: 'Conv_Proxima_Nova_Extrabold';
+$pn_black  			: 'proxima_novablack';
+
+// Viewports
+$desktop_xxl	:	1600px;
+$desktop_xl		:	1440px;
+$laptop			:	1366px;
+$desktop		:	1200px;
+$desktopSmall	:	1024px;
+$tablet			:	992px;
+$tabletSmall	:	768px;
+$mobileBig		:	767px;
+$mobileMed		:	600px;
+$mobile			:	480px;
+$mobileSmall	:	375px;
+
+$assetPath : "../img";
+$font-path : "../fonts";
+$image-path : "../img";

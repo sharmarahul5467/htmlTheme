@@ -1,0 +1,50 @@
+/*=======================================
+DO NOT EDIT CSS HERE 
+========================================*/
+
+// my default files
+// @import './styles/var'; // custom variable will be here 
+// @import './styles/mixins/**/**.scss';
+// @import './styles/mixins/**/**.sass';
+
+// local fonts 
+// @include roboto($roboto , $font-path);
+// @include raleway($raleway , $font-path);
+
+
+// @import "fontawesome/font-awesome";
+// @import "bootstrap/bootstrap"; // version 4
+// @import "animate/_animate";
+
+// @import "styles/_mixin";
+// @import "styles/**/*";
+// @import "styles/_margin-padding";
+// @import "styles/common";
+// @import "styles/_loader";
+// @import "styles/_header";
+// @import "styles/_banner";
+// @import "styles/_footer";
+// @import "styles/_menu";
+// @import "styles/_functions";
+// @import "styles/_sprite-icons"; 
+// @import "styles/_bootstrap";
+    
+
+@import './_include/bootstarp';
+
+@import './styles/pages/**.scss';
+body {
+    font-size: 20px;
+    
+}
+h1
+{
+    align-items: center;
+    display: flex;
+    
+       
+}
+
+
+
+// @debug variable-exists("primary-color");

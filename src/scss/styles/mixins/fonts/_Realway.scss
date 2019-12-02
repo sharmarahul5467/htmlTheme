@@ -1,0 +1,113 @@
+@mixin raleway($family: 'Roboto' , $path : '') {    
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-Medium.eot');
+        src: url('#{$path}/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-Medium.woff2') format('woff2'),
+            url('#{$path}/Raleway-Medium.woff') format('woff'),
+            url('#{$path}/Raleway-Medium.ttf') format('truetype'),
+            url('#{$path}/Raleway-Medium.svg#Raleway-Medium') format('svg');
+        font-weight: 500;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway.eot');
+        src: url('#{$path}/Raleway.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway.woff2') format('woff2'),
+            url('#{$path}/Raleway.woff') format('woff'),
+            url('#{$path}/Raleway.ttf') format('truetype'),
+            url('#{$path}/Raleway.svg#Raleway') format('svg');
+        font-weight: normal;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-ExtraBold.eot');
+        src: url('#{$path}/Raleway-ExtraBold.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-ExtraBold.woff2') format('woff2'),
+            url('#{$path}/Raleway-ExtraBold.woff') format('woff'),
+            url('#{$path}/Raleway-ExtraBold.ttf') format('truetype'),
+            url('#{$path}/Raleway-ExtraBold.svg#Raleway-ExtraBold') format('svg');
+        font-weight: 800;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-Heavy.eot');
+        src: url('#{$path}/Raleway-Heavy.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-Heavy.woff2') format('woff2'),
+            url('#{$path}/Raleway-Heavy.woff') format('woff'),
+            url('#{$path}/Raleway-Heavy.ttf') format('truetype'),
+            url('#{$path}/Raleway-Heavy.svg#Raleway-Heavy') format('svg');
+        font-weight: 900;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-Bold.eot');
+        src: url('#{$path}/Raleway-Bold.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-Bold.woff2') format('woff2'),
+            url('#{$path}/Raleway-Bold.woff') format('woff'),
+            url('#{$path}/Raleway-Bold.ttf') format('truetype'),
+            url('#{$path}/Raleway-Bold.svg#Raleway-Bold') format('svg');
+        font-weight: bold;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-SemiBold.eot');
+        src: url('#{$path}/Raleway-SemiBold.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-SemiBold.woff2') format('woff2'),
+            url('#{$path}/Raleway-SemiBold.woff') format('woff'),
+            url('#{$path}/Raleway-SemiBold.ttf') format('truetype'),
+            url('#{$path}/Raleway-SemiBold.svg#Raleway-SemiBold') format('svg');
+        font-weight: 600;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-Thin.eot');
+        src: url('#{$path}/Raleway-Thin.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-Thin.woff2') format('woff2'),
+            url('#{$path}/Raleway-Thin.woff') format('woff'),
+            url('#{$path}/Raleway-Thin.ttf') format('truetype'),
+            url('#{$path}/Raleway-Thin.svg#Raleway-Thin') format('svg');
+        font-weight: 100;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-Light.eot');
+        src: url('#{$path}/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-Light.woff2') format('woff2'),
+            url('#{$path}/Raleway-Light.woff') format('woff'),
+            url('#{$path}/Raleway-Light.ttf') format('truetype'),
+            url('#{$path}/Raleway-Light.svg#Raleway-Light') format('svg');
+        font-weight: 300;
+        font-style: normal;
+    }
+    
+    @font-face {
+        font-family: $family ;
+        src: url('#{$path}/Raleway-ExtraLight.eot');
+        src: url('#{$path}/Raleway-ExtraLight.eot?#iefix') format('embedded-opentype'),
+            url('#{$path}/Raleway-ExtraLight.woff2') format('woff2'),
+            url('#{$path}/Raleway-ExtraLight.woff') format('woff'),
+            url('#{$path}/Raleway-ExtraLight.ttf') format('truetype'),
+            url('#{$path}/Raleway-ExtraLight.svg#Raleway-ExtraLight') format('svg');
+        font-weight: 200;
+        font-style: normal;
+    }
+    
+        
+    
+}

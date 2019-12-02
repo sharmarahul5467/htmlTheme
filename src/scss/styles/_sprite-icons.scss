@@ -1,0 +1,51 @@
+.sprite-icon {
+    position:relative;
+    padding-left:60px !important;
+    &:after {
+        content:"";
+        background:url(../img/sprite-background.png) no-repeat;
+        width: 60px;
+        height: 100%;
+        
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
+}
+
+
+.offer-detail__list{
+    .sprite-offer-details {
+        &:after{
+            background-position: -232px -70px;
+        } 
+        &.active:after{
+            background-position: -232px -352px;
+        }
+        
+    }
+    .sprite-offer-validity {
+        &:after{
+            background-position: -157px -70px;
+        } 
+        &.active:after{
+            background-position: -157px -352px;
+        }
+    }
+    .sprite-redemption-process {
+        &:after{
+            background-position: -82px -70px;
+        } 
+        &.active:after{
+            background-position: -82px -352px;
+        }
+    }
+    .sprite-escalation-matrix {
+        &:after{
+            background-position: -307px -70px;
+        } 
+        &.active:after{
+            background-position: -307px -352px;
+        }
+    }
+}

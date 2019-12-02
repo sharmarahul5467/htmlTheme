@@ -1,0 +1,46 @@
+@colors: blue, green, yellow, red;
+
+
+// mixin to iterate over colors and create CSS class for each one
+.make-color-classes(@i: length(@colors)) when (@i > 0) {
+    .make-color-classes(@i - 1);
+    @color: extract(@colors, @i); 
+    .@{color} {
+        color: @color;  
+    }
+}  
+
+.make-color-classes(); // run the mixin
+
+//$badge-colors: blue #7FB3D4, gray #767676, green #8CC079, red #b35d5d, dark-red #b5473e, black #666, cyan #81BABD, purple #AEA7CF;
+@page-icon-list:blue '#00f', image "\e926", gallery "\e90e", video "\e914"; //the 2D array
+
+.loop(@index) when (@index > 0){
+    @page-icon: extract(@page-icon-list, @index); //extract based on comma separator each page-icon combo
+    @page-type: extract(@page-icon,1); //first part of the extracted value is the page type
+    @icon: extract(@page-icon,2); //second part is the icon
+    .page-type_{
+      .color-@{page-type}
+      {
+        content: @icon;
+      }        
+    }
+    .loop(@index - 1);
+}
+.loop(length(@page-icon-list)); //pass the length as counter (split based on comma)
+
+
+body {
+  font-size: 20px;
+  display: flex;
+  flex: 1 1 auto;
+  opacity: 0;
+  justify-content: center;
+}
+h1
+{
+  align-items: center;
+  align-items: center;
+  
+  
+}

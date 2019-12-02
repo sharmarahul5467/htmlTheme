@@ -1,0 +1,105 @@
+
+
+//use these media-breakpoint-up for min-width
+// @include media-breakpoint-up(xs) {.some-class {display: block;} }
+// @include media-breakpoint-up(sm) {.some-class {display: block;} }
+// @include media-breakpoint-up(md) {.some-class {display: block;} }
+// @include media-breakpoint-up(lg) {.some-class {display: block;} }
+// @include media-breakpoint-up(xl) {.some-class {display: block;} }
+
+//use these media-breakpoint-up for max-width
+// @include media-breakpoint-down(xs) {  }
+// @include media-breakpoint-down(sm) {  }
+// @include media-breakpoint-down(md) {  }
+// @include media-breakpoint-down(lg) {  }
+
+//use these media-breakpoint-up for only same breakpoints
+// @include media-breakpoint-only(xs) {  }
+// @include media-breakpoint-only(sm) {  }
+// @include media-breakpoint-only(md) {  }
+// @include media-breakpoint-only(lg) {  }
+// @include media-breakpoint-only(xl) {  }
+
+//use these media-breakpoint-up to set range  between (xs , sm ,md ,lg , xl)
+// @include media-breakpoint-between(md, xl) {  }
+
+
+// z-index
+// $zindex-dropdown:          1000;
+// $zindex-sticky:            1020;
+// $zindex-fixed:             1030;
+// $zindex-modal-backdrop:    1040;
+// $zindex-modal:             1050;
+// $zindex-popover:           1060;
+// $zindex-tooltip:           1070;
+
+// grid column and gutter 
+// $grid-columns:      12;
+// $grid-gutter-width: 30px;
+
+// font family 
+// $font-family-base : sans-serif; // default font family
+// $font-size-base : ;
+// $line-height-base: ;
+
+//----------body style
+// $body-bg: #000;
+// $body-color: #fff;
+
+
+//----------------default color code 
+// $blue:    #000 ;
+// $indigo:  #6610f2 ;
+// $purple:  #6f42c1 ;
+// $pink:    #e83e8c ;
+// $red:     #dc3545 ;
+// $orange:  #fd7e14 ;
+// $yellow:  #ffc107 ;
+// $green:   #28a745 ;
+// $teal:    #20c997 ;
+// $cyan:    #17a2b8 ;
+//------------------ default theme-code
+// $primary:       $blue ;
+// $secondary:     $gray-600 ;
+// $success:       $green ;
+// $info:          $cyan ;
+// $warning:       $yellow ;
+// $danger:        $red ;
+// $light:         $gray-100 ;
+// $dark:          $gray-800 ;
+// ---------theme basic setting
+
+//------Remove color from theme
+
+// $theme-colors: map-remove($theme-colors, "info", "light", "dark"); // to remove color from theme
+
+//------ change default theme color code 
+$theme-colors: (
+  "primary"   : if(variable-exists("primary-color"),    $primary-color, $primary),
+  "secondary" : if(variable-exists("secondary-color"),  $secondary-color, $secondary),
+  "success"   : if(variable-exists("success-color"),    $success-color, $success),
+  "info"      : if(variable-exists("info-color"),       $info-color, $info),
+  "warning"   : if(variable-exists("warning-color"),    $warning-color, $warning),
+  "danger"    : if(variable-exists("danger-color"),     $danger-color, $danger),
+  "light"     : if(variable-exists("light-color"),      $light-color, $light),
+  "dark"      : if(variable-exists("dark-color"),       $dark-color, $dark),
+);
+//------ add your own class and color in  theme 
+$theme-colors: map-merge(
+  (
+    "default": #f0f,
+  ),$theme-colors);
+
+
+//add  breakpoints here 
+$grid-breakpoints: (
+  xs: 0,
+  sm: 576px,
+  md: 768px,
+  lg: 992px,
+  xl: 1200px,
+) ;
+
+// @debug if(variable-exists("primary-color"), $primary-color, $primary); // 10px
+// @debug if(false, 10px, 15px); 
+
