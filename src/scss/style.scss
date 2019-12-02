@@ -30,20 +30,10 @@ DO NOT EDIT CSS HERE
 // @import "styles/_bootstrap";
     
 
-@import './_include/bootstarp';
+@import './_include/vendors/bootstrap/bootstrap';
 
-@import './styles/pages/**.scss';
-body {
-    font-size: 20px;
-    
-}
-h1
-{
-    align-items: center;
-    display: flex;
-    
-       
-}
+
+
 
 
 

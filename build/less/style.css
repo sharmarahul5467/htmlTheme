@@ -1,0 +1,46 @@
+.blue {
+  color: blue;
+}
+.green {
+  color: green;
+}
+.yellow {
+  color: yellow;
+}
+.red {
+  color: red;
+}
+.page-type_ .color-video {
+  content: "\e914";
+}
+.page-type_ .color-gallery {
+  content: "\e90e";
+}
+.page-type_ .color-image {
+  content: "\e926";
+}
+.page-type_ .color-blue {
+  content: '#00f';
+}
+body {
+  font-size: 20px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 1;
+  -webkit-flex: 1 1 auto;
+      -ms-flex: 1 1 auto;
+          flex: 1 1 auto;
+  opacity: 0;
+  -webkit-box-pack: center;
+  -webkit-justify-content: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+h1 {
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
