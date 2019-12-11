@@ -1,14 +1,17 @@
 
 
-@import './_include/variables/*.scss'; // work with gulp glob sass only
+// @import "variables/**"; // work with gulp glob sass only
 
 
-// default paths
+// // default paths
 
-$assetPath : "../img";
-$font-path : "../fonts";
-$image-path : "../img";
-
-
+// $assetPath : "../img";
+// $font-path : "../fonts";
+// $image-path : "../img";
 
 
+
+
+.body{
+    color: red;
+}

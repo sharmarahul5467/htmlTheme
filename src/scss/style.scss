@@ -31,9 +31,17 @@ DO NOT EDIT CSS HERE
     
 
 // @import './_include/vendors/bootstrap/scss/bootstrap.scss';
-@import './_include/abstracts/*.scss'; 
+@import '_include/vendors/bootstrap/scss/bootstrap'; 
+@import '_include/abstracts/**/*.scss'; 
+@import '_include/base/**/*.scss'; 
+@import '_include/layout/**/*.scss'; 
+@import '_include/components/**/*.scss';
+@import '_include/pages/**/*.scss';
+@import '_include/themes/**/*.scss';
 
 
+
+    
 
 
 

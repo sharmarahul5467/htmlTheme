@@ -1,0 +1,21 @@
+{
+  "name": "htmltheme",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "dependencies": {},
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sharmarahul5467/htmlTheme.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sharmarahul5467/htmlTheme/issues"
+  },
+  "homepage": "https://github.com/sharmarahul5467/htmlTheme#readme"
+}
