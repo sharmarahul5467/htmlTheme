@@ -111,7 +111,7 @@ function liveServer() {
       baseDir: "./build/"
     }
   });
-  watch("./build/**").on("change", browserSync.reload);
+  watch("./src/**/*").on("change", browserSync.reload);
 }
 
 exports.clean = clean;
@@ -128,7 +128,7 @@ exports.start = series(
   parallel(html, js, css, images),
   parallel(liveServer, watchFiles)
 );
-exports.build = series(clean, parallel(html, js, css, images), watchFiles);
+exports.build = series(clean, parallel(html, js, css, images));
 exports.default = series(
   parallel(html, js, css, images),
   parallel(liveServer, watchFiles)

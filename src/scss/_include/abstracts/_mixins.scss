@@ -1,6 +1,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all application-wide Sass mixins.
 // -----------------------------------------------------------------------------
+@import './_include/mixins/font/*.scss';
 
 /// Event wrapper
 /// @author Harry Roberts
@@ -31,4 +32,3 @@
     @content;
   }
 }
-
