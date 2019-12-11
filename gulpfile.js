@@ -7,6 +7,7 @@ const del = require("del");
 const cache = require("gulp-cache");
 const imagemin = require("gulp-imagemin");
 const autoprefixer = require("gulp-autoprefixer");
+const gulpStylelint = require('gulp-stylelint');
 
 const browserSync = require("browser-sync").create();
 const sass = require("gulp-sass");
@@ -56,6 +57,16 @@ function css() {
       })
     ).pipe(dest(url_dest + "css/"));
 }
+// function lint(){
+//   return src(url_src + "scss/style.scss")
+//   .pipe(gulpStylelint({
+//     reporters: [
+//       {formatter: 'string', console: true}
+//     ]
+//   }))
+//   ;
+
+// }
 
 /* Complie Css from Less with autoprefixer */
 
@@ -122,6 +133,7 @@ exports.img = images;
 exports.html = html;
 exports.cssLess = cssLess;
 exports.css = css;
+// exports.lint = lint;
 exports.js = js;
 exports.watch = watchFiles;
 exports.start = series(
